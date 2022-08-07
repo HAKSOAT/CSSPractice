@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a111042d4b.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <section id="search">
+        <div id="search-box">
+            <div id="search-text-input">
+                <input type="text" placeholder="Search..">
+                <div class="icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <button class="action-button">
+                Advanced Search
+            </button>
+        </div>
+        <div id="search-filter" class="white-box">
+            <div>
+                <input type="checkbox"> Match all of the following rules
+            </div>
+            <div>
+                <p>Select Fields</p>
+                <div class="row">
+                    <div class="filter-fields-row">
+                        <select name="fields" id="fields" class="grey">
+                            <option value="address"><i class="fa-solid fa-location-dot"></i> Address</option>
+                            <option value="product-name"><i class="fa-solid fa-font-case"></i> Product Name</option>
+                            <option value="gp"><i class="fa-solid fa-house-medical"></i> NHS GP</option>
+                        </select>
+                        <select name="comparison" id="comparison" class="grey">
+                            <option value="contains">contains</option>
+                            <option value="is">is ...</option>
+                            <option value="greater than">within distance</option>
+                        </select>
+                        <input type="text" class="grey">
+                        <div class="icon">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="filter-fields-row">
+                        <select name="fields" id="fields" class="grey">
+                            <option value="address"><i class="fa-solid fa-location-dot"></i> Address</option>
+                            <option value="product-name"><i class="fa-solid fa-font-case"></i> Product Name</option>
+                            <option value="gp"><i class="fa-solid fa-house-medical"></i> NHS GP</option>
+                        </select>
+                        <select name="comparison" id="comparison" class="grey">
+                            <option value="contains">contains</option>
+                            <option value="is">is ...</option>
+                            <option value="greater than">within distance</option>
+                        </select>
+                        <input type="text" class="grey">
+                        <div class="icon">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <p>Select Date</p>
+                <div class="row">
+                    <div class="filter-date-row">
+                        <select name="fields" id="fields" class="grey">
+                            <option value="address">Custom Date</option>
+                            <option value="product-name"><i class="fa-solid fa-font-case"></i> Product Name</option>
+                            <option value="gp"><i class="fa-solid fa-house-medical"></i> NHS GP</option>
+                        </select>
+                        <div class="grey calender-box">
+                            <span>2018-01-22</span>
+                            <div class="icon">
+                                <i class="fa-solid fa-calendar-days"></i>
+                            </div>
+                        </div>
+                        <span>-</span>
+                        <div class="grey calender-box">
+                            <span>2018-01-22</span>
+                            <div class="icon">
+                                <i class="fa-solid fa-calendar-days"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="filter-date-row">
+                        <select name="fields" id="fields" class="grey">
+                            <option value="address">Custom Date</option>
+                            <option value="product-name"><i class="fa-solid fa-font-case"></i> Product Name</option>
+                            <option value="gp"><i class="fa-solid fa-house-medical"></i> NHS GP</option>
+                        </select>
+                        <div class="grey calender-box">
+                            <span>2018-01-22</span>
+                            <div class="icon">
+                                <i class="fa-solid fa-calendar-days"></i>
+                            </div>
+                        </div>
+                        <span>-</span>
+                        <div class="grey calender-box">
+                            <span>2018-01-22</span>
+                            <div class="icon">
+                                <i class="fa-solid fa-calendar-days"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="row">
+                    <div class="filter-footer-row">
+                        <div>
+                            <p><i class="fa-solid fa-sliders"></i> Save filter</p>
+                        </div>
+                        <div id="filter-action">
+                            <button class="cancel-button">Cancel</button>
+                            <button class="action-button">Apply</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

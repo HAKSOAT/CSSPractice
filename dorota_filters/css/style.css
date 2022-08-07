@@ -1,0 +1,126 @@
+/* generic site styles */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    border-style: none;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #CCCCCC;
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    width: 80%;
+    margin: 5em auto;
+    padding: 0 1rem;
+}
+
+.filter-section {
+    background-color: white;
+    padding: 1em 1em;
+}
+
+
+/* Layout */
+.filter-data-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 3fr 2fr;
+    height: 2.5em;
+    gap: 0.7em;
+}
+
+.filters {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1.5em;
+}
+
+.active-filters {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 0.5em;
+    height: 2em;
+}
+
+.filter-tag, 
+.filter-conditional {
+    display: flex;
+    align-items: center;
+}
+
+.filter-tag {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: 0.3em;
+    width: 17em;
+}
+
+/* Features */
+.rounded {
+    border-radius: 1.4em;
+}
+
+input[type=text], 
+select, 
+.filter-tag {
+    border-style: solid;
+    border-color: #ECEBEE;
+    padding: 0 1.1em;
+}
+
+.filter-tag-content > span:nth-child(2) {
+    font-weight: bold;
+}
+
+.add-button {
+    background-color: #7915D9;
+    color: white;
+}
+
+.filter-tag {
+    background-color: #B379C1;
+    color: white;
+    padding-bottom: 0.3em;
+}
+
+.filter-tag-x {
+    cursor: pointer;
+}
+
+p {
+    margin: 0.8em 1.2em;
+}
+
+select {
+    background-color: #F5F2F7;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: right 1.5em top 50%;
+    background-size: .8em auto;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+select,input:focus {
+    outline: none;
+}
+
+select:focus {
+    border-radius: 1.4em 1.4em 0 1.4em;
+    background-color: #7915D9;
+    color: white;
+}
